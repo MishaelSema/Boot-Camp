@@ -1,0 +1,34 @@
+p{
+    text-align: center;
+    border: 0.2rem solid rgb(47, 107, 10);
+    padding: 5rem;
+    background-color: rgb(182, 246, 216);
+}
+.flag{
+    display: inline-flex;
+    
+}
+.flag p{
+    border: none;
+    padding: 2rem;
+}
+.flag :nth-child(2){
+    border: 1px solid ;
+
+}
+.grey{
+    height: 120px;
+    width: 300px;
+}.blue{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 1px;
+    bottom: -1px;
+}.orange{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 3px;
+    bottom: -3px;
+}

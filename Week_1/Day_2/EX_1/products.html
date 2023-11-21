@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Product Cards</title>
+	<style>
+           body{
+                background: linear-gradient(rgba(0, 0, 255, 0.729),rgba(17, 255, 0, 0.487),rgba(255, 0, 0, 0.79));
+                font-family: Arial, Helvetica, sans-serif;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+		.container {
+			display: flex;
+			justify-content:center;
+			align-items: center;
+			margin: 0 auto;
+			max-width: 800px;
+		}
+       
+		.card {
+			background-color: white;
+			border-radius: 5px;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+			margin: 13px;
+			padding: 6px;
+			text-align: center;
+			width: 200px;
+		}
+		.card img {
+			height: 200px;
+			width: 100%;
+		}
+		.card h6 {
+			color: rgb(0, 0, 0);
+			font-size: 14px;
+			margin-top: 8px;
+		}
+		.card p {
+			color: rgb(17, 139, 23);
+			font-size: 16px;
+			margin-top: 8px;
+		}
+		.card button {
+			background-color: rgb(255, 255, 255);
+			border: 0.1px solid rgb(243, 243, 243) ;
+			border-radius: 5px;
+			color: rgb(0, 0, 0);
+			cursor: pointer;
+			font-size: 16px;
+			margin-top: 10px;
+			padding: 10px;
+			width: 100%;
+		}
+        .card span{
+            font-size: xx-small;
+            color: rgb(147, 147, 147);
+        }
+        @media only screen and (min-width: 600px) {
+          
+        .container {
+   display: table; 
+   flex-wrap: wrap;
+   align-items: unset;
+  
+   
+  }
+  .card{
+    padding: 0 9rem;text-align:center ;
+  }
+  .card img{
+    height: 400px;
+    width: 200%;
+    margin-left: -100px;
+    margin-top: 40px;
+  }
+  .card h6 {
+    color: rgb(0, 0, 0);
+			font-size: 50px;
+			margin-top: 8px;
+            margin-left: -20px;
+            
+		}
+        .card p {
+			color: rgb(17, 139, 23);
+			font-size: 40px;
+			margin-top: -80px;
+		}
+		.card button {
+			background-color: rgb(255, 255, 255);
+			border: 0.1px solid rgb(243, 243, 243) ;
+			border-radius: 5px;
+			color: rgb(0, 0, 0);
+			cursor: pointer;
+			font-size: 16px;
+			margin-top: 10px;
+			padding: 0 120px;
+            margin-bottom: 30px;
+            margin-left: -20px;
+		}
+        .card span{
+            font-size: 19px;
+            color: rgb(147, 147, 147);
+        }
+}
+@media only screen and (min-width: 768px) {
+    .container {
+   display:flex;
+        
+  }
+  .card img{
+    height: 400px;
+    width: 140%;
+    margin-left: -40px;
+    margin-top: 0px;
+  }
+  .card{
+    padding: 60px;
+  }
+
+  .card h6 {
+    color: rgb(0, 0, 0);
+			font-size: 50px;
+			margin-top: 8px;
+            margin-left: -30px;
+            
+		}
+  
+  
+}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="card">
+			<img src="1.jpg" alt="Product 1">
+			<h6>Scammer Drip</h6>
+			<p>$14.40 <span style="text-decoration: line-through;">$16.00</span></p>
+			<button class="B4">Add to Cart</button>
+		</div>
+		<div class="card">
+			<img src="2.jpg" alt="Product 2">
+			<h6>Black/White Stripe Polo</h6>
+			<p>$17.60 <span style="text-decoration: line-through;">$20.00</span></p>
+			<button class="b3">Add to Cart</button>
+		</div>
+		<div class="card">
+			<img src="3.jpg" alt="Product 3">
+			<h6>Burberry T-shirt</h6>
+			<p>$14.40 <span style="text-decoration: line-through;">$16.00</span></p>
+			<button class="B2">Add to Cart</button>
+		</div>
+		<div class="card">
+			<img src="4.jpg" alt="Product 4">
+			<h6>Blue Hood</h6>
+			<p>$19.99</p>
+			<button class="B1">Add to Cart</button>
+		</div>
+	</div>
+</body>
+</html>

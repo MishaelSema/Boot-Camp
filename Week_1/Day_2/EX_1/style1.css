@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*......................Index or home page style start............................*/ 
+.nav_content{
+    justify-content: space-between;
+    padding: 10px;
+    display: flex;
+    background-color: black;
+}
+.logo{
+    font-size: 25px;
+    margin-left: 10px;
+}
+.nav_content a{
+    text-decoration: none;
+    color: white;
+    text-transform:uppercase;
+    padding: 10px;
+    font-size: 9px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.nav_content a:hover{
+    color: rgb(162, 239, 120);
+}
+/*......................Index or home page style END............................*/ 

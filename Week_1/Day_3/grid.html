@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+.header {
+  grid-area: header;
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* The grid container */
+.grid-container {
+  display: grid;
+  padding: 20px;
+  border: 5px solid;
+  grid-template-areas: 
+    'x1 y1 y1 y1' 
+    'x2 y2 y2 y2'
+    'x3 y3 y3 y3' 
+    'z z z z';
+  grid-gap:12px /* grid-column-gap: 10px; - if you want gap between the columns */
+} 
+.grid-container1 {
+  display: grid;
+  padding: 20px;
+  border: 5px solid;
+  grid-template-areas: 
+'a a a a'
+'b c c c'
+'b c c c'
+'d c c c'
+'d c c c'
+'d e e e'
+'f f f g'
+'h h h h';
+grid-gap:12px /* grid-column-gap: 10px; - if you want gap between the columns */
+} 
+.a{padding: 20px;}.c{padding: 200px;}.h{padding: 20px;}.b,.d,.e,.f,.g{
+    padding: 60px;
+    border-radius: 6px;
+}
+
+
+/* Style the left column */
+.x1{
+  grid-area: x1;
+}.x2{
+  grid-area: x2;
+}.x3{
+  grid-area: x3;
+}
+
+/* Style the middle column */
+.a{
+  grid-area: a;
+}.b {
+  grid-area: b;
+}.c {
+  grid-area: c;
+}.d{
+  grid-area: d;
+}.e{
+  grid-area: e;
+}.f{
+  grid-area: f;
+}
+
+/* Style the middle column */
+.g{
+  grid-area: g;
+}.h {
+  grid-area: h;
+}
+
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .grid-container  {
+    grid-template-areas: 
+      'header header header header header header' 
+      'left left left left left left' 
+      'middle middle middle middle middle middle' 
+      'right right right right right right' 
+      'footer footer footer footer footer footer';
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="grid-container1">
+    <div class="a" style="background-color:#838a00;">Column</div>
+    <div class="b" style="background-color:#008a7e;">Column</div>
+    <div class="c" style="background-color:rgb(94, 255, 0);">Column</div>
+    
+    <div class="d" style="background-color:rgb(255, 0, 166);">Column</div> 
+    <div class="e" style="background-color:blue;">Column</div> 
+    <div class="f" style="background-color:rgb(128, 25, 121);">Column</div> 
+    <div class="g" style="background-color:rgb(152, 152, 247);">Column</div> 
+    <div class="h" style="background-color:rgb(25, 25, 106);">Column</div> 
+</div>
+
+</body>
+</html>

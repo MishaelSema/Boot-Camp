@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <title>Mishael's CV</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container1{
+            background: linear-gradient(#ed765e,#fea858);
+            display: grid;
+            padding: 15px;
+            gap: 1px;
+            grid-template-areas: 
+            'top top top top'
+            'left1 right1 right1 right1'
+            'left2 right2 right2 right2';
+        }
+        .container1 > div{
+            
+            padding: 2vh;
+        }
+        .top{grid-area: top;}
+        .right1{grid-area:right1;}
+        .right2{grid-area:right2;}
+        .left1{grid-area: left1;}
+        .left2{grid-area: left2;}
+        
+
+
+        /*.left_container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: calibri;
+        }
+        .left_container img{
+            width: 18vh;
+            height: 18vh;
+            border-radius: 50%;
+            align-self: center;
+        }
+        .left_container :nth-child(2),:nth-child(3){
+            text-transform: uppercase;
+            text-align: center;
+        }.left_container hr{
+            align-self:normal;
+        }
+        .left{
+            background: linear-gradient(to bottom right, #1DE5E2, #b588f7);
+            line-height: 8vh;
+        }*/
+        .top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: aliceblue;
+        }
+        .top hr{
+            width: 20%;
+            background-color: orange;
+            padding: 0.4px;
+            border: none;
+        }
+        .left1{
+            display: flex;
+            flex-direction: column;
+        }
+        .left1 i{
+            padding: 4px 0;
+
+        }
+        .contact div{
+            display: flex;align-items: center;
+
+        }
+        .contact i{
+            font-size: 100%;
+            margin-right:   6px;
+            color: orange;
+            
+        }
+        @font-face {
+            font-family:monserrat ;
+            src: url(Montserrat-VariableFont_wght.ttf);
+        }
+        .contact p{font-size: 10px;}
+        .left2{font-family: monserrat;}
+        .left2 p{font-size: 10px;}
+        .right1 p{font-size: 13px;}
+
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <!--<div class="left">
+            <div class="left_container">
+                <img src="profile_pic.jpg">
+                <h1>ekom mishael sema</h1>
+                <p>fullstack developer</p>
+                <hr>
+                <p>+237 6 20 84 61 69</p>
+                <p>mishaelsema@gmail.com</p>
+                <p>cameroon</p>
+                <p>damas, yaounde</p>
+                <hr>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-tiktok"></i>
+                <i class="fa-brands fa-spotify"></i>
+            </div>
+        </div>-->
+        <div class="top">
+            <div>
+                <span style="font-size: 4vh;font-family: sans-serif;"><p>Mishael</p><p><b>SEMA</b></p></span>
+                <hr>
+                <p style="text-transform: capitalize;font-size: 2vh;line-height: 20px;font-family: monserrat;">fullstack developer</p>
+            </div>
+            <img src="profile_pic.jpg" style="border-radius: 50%;height: 14vh;">
+        </div>
+        <div class="right1" style="background-color: aliceblue;font-family: monserrat;">
+            <h3>PROFILE</h3>
+            <hr style="width: 3%;padding: 0.8px 0;border: none;background-color: orange;"><br>
+            <p><b>Hello, my name is Mishael Sema</b> and I am the man you need for the job. I am able to work completely cool headed under intense pressure. Also I am very reliable, and active.</p><p>I AM HIM. Thank you for your patience. Ignore the spellings too...</p>
+        </div>
+        <div class="left1" style="background-color: aliceblue;font-family: monserrat;">
+            <h4>CONTACT</h4>
+            <hr style="width: 7%;padding: 0.8px 0;border: none;background-color: orange;"><br>
+            <div class="contact">
+                <div class="zap">                
+                    <i class="fa-brands fa-whatsapp"></i><p>+237 6 20 84 61 69</p>
+                </div>
+
+                <div class="mail">                
+                    <i class="fa-solid fa-envelopes-bulk"></i><p>mishaelsema@gmail.com</p>
+                </div>
+
+                <div class="IG">                
+                    <i class="fa-brands fa-instagram"></i><p><a style="text-decoration: none;color: black;" href="//www.instagram.com/mishael_sema/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==">INSTAGRAM</a></p>
+                </div>
+
+                <div class="Git">                
+                    <i class="fa-brands fa-github"></i><p>MishaelSema</p>
+                </div>
+            </div>
+        </div>
+        <div class="right2" style="background-color: aliceblue;font-family: monserrat;">
+            <h3>WORK EXPERIENCE</h3>
+            <hr style="width: 4%;padding: 0.8px 0;border: none;background-color: orange;"><br>
+            <h4 style="color: rgb(108, 108, 108);">Projecct Manager</h4>
+            <h5 style="color: rgb(142, 141, 141);">Space | NASA | June 2026 ~ Present</h5><br>
+            <h4 style="color: rgb(108, 108, 108);">Event Planner</h4>
+            <h5 style="color: rgb(142, 141, 141);">Cameroon | E. Delly Partners | June 2018 ~ Present</h5><br>
+            <h4 style="color: rgb(108, 108, 108);">Rapper</h4>
+            <h5 style="color: rgb(142, 141, 141);">cameroon | Blunt Music .CO | June 2005 ~ Present</h5><br>
+        </div>
+        <div class="left2 " style="background-color: aliceblue;">
+            <h4>EDUCATION</h4>
+            <hr style="width: 7%;padding: 0.6px 0;border: none;background-color: orange;"><br>
+            <h5>A-Level</h5>
+            <p>G.H.A.C</p>
+            <p>June 2022-2023</p>
+            <br>
+            <h5>O-Level</h5>
+            <p>G.H.A.C</p>
+            <p>June 2020-2021</p>
+            <br><h5>Fullstack Dev in Pyth/JS</h5>
+            <p>Developer's Institute</p>
+            <p>June 2023-2024</p>
+        </div>
+    </div>
+</body>
+</html>

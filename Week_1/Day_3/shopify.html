@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        @font-face {
+            font-family: monserrat;
+            src: url(Montserrat-VariableFont_wght.ttf);
+        }
+        .container{
+            background: linear-gradient(#ed765e,#fea858);
+            padding: 15px;
+            font-family: monserrat;
+            display: grid;
+            gap:2px;
+            column-gap: 10vh;
+            grid-template-areas: 
+            'top top top'
+            'left middle right'
+            'foot1 foot2 foot3';
+        }
+        .container p{
+            color: rgb(50, 50, 50);
+        }
+        .top{grid-area:top ;}
+        .left{grid-area:left ;height:39vh; padding-top: 10vh;}
+        .right{grid-area:right ;padding-top: 10vh;}
+        .middle{grid-area:middle ;padding-top: 10vh;}
+        .foot1{grid-area:foot1 ;}
+        .foot2{grid-area:foot2 ;padding-top: 18vh; }
+        .foot3{grid-area:foot3 ;padding-top: 8vh; }
+        
+
+        .top,.middle,.right,.left{
+            text-align: center;
+        }
+        .top,.middle,.right,.left p{
+            font-size: smaller;
+        }
+        .container .top_box{
+            border-top-left-radius: 5px;
+            border-top-right-radius:5px ;
+            padding: 5%;font-size: smaller;
+            
+        }
+        .container .bottom_box{
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius:5px ;
+            padding: 5%;font-size: smaller;text-align: center;
+
+        }
+        .bottom_box span{font-size: x-small;}
+
+        @media only screen and (max-width:600px){
+            .container{ grid-template-areas: 
+            'top'
+            'middle'
+            'left'
+            'right'
+            'foot1'
+            'foot2'
+            'foot3';
+            padding: 10vh;
+            gap: 30vh;
+            }
+            .top{grid-area:top ;font-size: larger;}
+        .left{grid-area:left ;height:29vh; padding-top: 10vh;}
+        .right{grid-area:right ;padding-top: 1vh;padding-bottom: 9vh;}
+        .middle{grid-area:middle ;}
+        .foot1{grid-area:foot1 ;}
+        .foot2{grid-area:foot2 ;padding-top: 2vh; }
+        .foot3{grid-area:foot3 ;padding-top: 2vh; }
+        }
+        @media only screen and (max-width:200px){
+            .container{ grid-template-areas: 
+            'top'
+            'middle'
+            'left'
+            'right'
+            'foot1'
+            'foot2'
+            'foot3';
+            padding: 10vh;
+            gap: 30vh;
+            font-size: 2px;
+            }
+            .top{grid-area:top ;font-size: larger;}
+        .left{grid-area:left ;height:29vh; padding-top: 10vh;}
+        .right{grid-area:right ;padding-top: 1vh;padding-bottom: 9vh;}
+        .middle{grid-area:middle ;}
+        .foot1{grid-area:foot1 ;}
+        .foot2{grid-area:foot2 ;padding-top: 2vh; }
+        .foot3{grid-area:foot3 ;padding-top: 2vh; }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div>
+                <h2>Shopify powers ambitious entreprenuers all over the world</h2>
+            </div>
+        </div>
+        <div class="left">
+            <h2>500,000</h2>
+            <p>Businesses powered by shopify</p>
+        </div>
+        <div class="right">
+            <h2>$46B+</h2>
+            <p>Sold on shopify</p>
+        </div>
+        <div class="middle">
+            <h2>1,000,000+</h2>
+            <p>Active users</p>
+        </div>
+        <div class="foot1">
+            <div class="top_box"  style="background-color: white;">
+                <P>I am seriously happy about running our store on Shopify. Powerful features and easy to set up, running an online store shouldn't be this much fun</P>
+            </div>
+            <!--<img src="1.jpg" alt="" style="border-radius: 50%;height: 10vh;width: 10vh;">-->
+            <div class="bottom_box" style="background-color: rgb(184, 255, 126);">
+                <p>Tina Roth Eisenberg ,<span><br> Founder of Tattly</p>
+            </div>
+        </div>
+        <div class="foot2">
+            <div class="top_box" style="background-color: white;">
+                <P>Shopify has helped me grow my business amazingly. It's been a pleasure because everything has been easier than I ever imagined.</P>
+            </div>
+            <!--<img src="2.jpg" alt="" style="border-radius: 50%;height: 10vh;width: 10vh;">-->
+            <div class="bottom_box" style="background-color: rgb(139, 98, 251);">
+                <p>Corrine Anestopoulos <span><br>Founder, BIKO Jewelrys</span></p>
+            </div>
+        </div>
+        <div class="foot3">
+            <div class="top_box" style="background-color: white;">
+                <P>The best thing about Shopify is that it's made me not have to worry about anything that has to do with ecommerce..</P>
+            </div>
+            <!--<img src="4.jpg" alt="" style="border-radius: 50%;height: 10vh;width: 10vh;" -->
+            <div class="bottom_box" style="background-color: rgb(255, 131, 253);">
+                <p>Chris Tsang <span><br>Founder, Mindzal Toys</span></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+.btn-outline-success{
+    width: 10rem;
+}
+.navbar{
+    background-color: black;
+}
+.container-fluid{
+    padding: 0 50px;
+}
+.navbar{
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+.nav-link{
+    padding: 1.3rem 1rem;
+}
+.navbar-toggler{
+    padding: 0 0.75rem;
+}
+.row{
+    padding: 50px 50px;
+}
+.row .card{
+    border: none;
+}
+.row a{
+    background-color: transparent;
+    border-color: rgb(21, 21, 21);
+    color: rgb(41, 41, 41);
+}
+#navbarSupportedContent{
+    font-size: 10px;
+}
+.d-flex .form-control,.btn-outline-success{
+    padding: 3px 3px ;
+    font-size:13px ;
+}
+.p-5{
+    padding-top: 80px!important;
+}
