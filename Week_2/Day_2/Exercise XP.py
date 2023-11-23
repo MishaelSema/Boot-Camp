@@ -20,7 +20,7 @@ basket.remove("Banana")
 basket.remove("Blueberries")
 basket.insert(len(basket),"Kiwi")
 basket.insert(0,"Apples")
-print("EX_5: ","there is(are)", basket.count("Apples"),"Apples in the basket")
+print("EX_3: ","there is(are)", basket.count("Apples"),"Apples in the basket")
 basket.clear()
 print("EX_3: ",basket)
 #Ex_4
@@ -59,6 +59,7 @@ while input("What is my name: ") != your_name:
     continue
 #Ex_7
 fav_fruit=input("what is(are) yoour favorite fruit(s). Seperate them with space.\n FRUIT NAME: ")
+print(fav_fruit)
 fav_list=fav_fruit.split(" ")
 if input("Name any fruit: ") in fav_list:
     print("Ex_7: ","You chose one of your favorite fruits! Enjoy!")
