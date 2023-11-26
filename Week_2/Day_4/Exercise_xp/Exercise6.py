@@ -1,10 +1,13 @@
-magician_names=['Harry Houdini', 'David Blaine', 'Criss Angel']
-def show_magician():
-    iter=map(lambda s: s,magician_names)
-    print(list(iter))
+magician_names = ['Harry Houdini', 'David Blaine', 'Criss Angel']
 
-def make_great():
-    iter=map(lambda s: magician_names.append(f"The Great {s}"),magician_names)
-    print(list(iter))
-make_great()
-show_magician()
+def show_magicians(magicians):
+    for magician in magicians:
+        print(magician)
+
+def make_great(magicians):
+    for i in range(len(magicians)):
+        magicians[i] = "The Great "+magicians[i]
+
+make_great(magician_names)
+show_magicians(magician_names)
+
